@@ -21,15 +21,21 @@ body {
     flex-direction: column;
 }
 
+.input-group {
+    display: flex;
+    align-items: center; 
+}
+
 input[type='text']:disabled {
     background-color: #fff;
     color: #000;
     padding: 0.5rem 1rem;
     border: #000;
     border-radius: 0.25rem;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2); /* Adding drop shadow */
 }
 
-button#copy-btn{
+button#copy-btn {
     background-color: #fff;
     color: #000;
     padding: 0.5rem;
@@ -37,8 +43,11 @@ button#copy-btn{
     border-radius: 0.25rem;
     text-transform: none;
     cursor: pointer;
+    margin-left: 0.5rem; /* Add some space between the input and button */
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2); /* Adding drop shadow */
 }
-button{
+
+button#change-btn {
     padding: 1rem 3rem;
     margin: 1rem 0;
     outline: none;
@@ -53,13 +62,13 @@ button{
     cursor: pointer;
 }
 
-button:hover {
+button#change-btn:hover {
     background-color: #fff;
     color: #000;
     border: 1px solid #000;
 }
 
-h1{
+h1 {
     text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
     align-items: center;
 }
